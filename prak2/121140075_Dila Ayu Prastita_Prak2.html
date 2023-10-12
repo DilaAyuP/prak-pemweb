@@ -1,0 +1,134 @@
+<!-- Dila Ayu Prastita -->
+<!-- 121140075 -->
+<!-- Praktikum Pemweb RC -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prak2 Pemweb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cv" border="1">
+        <header class="header">
+            <img src="img/me.jpeg" width="300" height="150" alt="foto dila" class="gambar">
+            <div class="judul">
+                <h1>Dila Ayu Prastita</h1>
+                <h3>Teknik Informatika - Institut Teknologi Sumatera</h3>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <li><a href="#tentang">Tentang Saya</a></li>
+            <li><a href="#pengalaman2">Pengalaman</a></li>
+            <li><a href="#hubungi-saya">Kontak</a></li>
+        </nav>
+
+
+        <div class="tentang" id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah seorang mahasiswa Teknik Informatika yang memiliki minat dalam pengembangan web. Saya memiliki keinginan yang kuat untuk merancang dan membangun situs web yang fungsional dan menarik secara estetis. Dengan latar belakang pendidikan saya, saya telah memahami konsep dasar pemrograman. Selain aspek teknis, saya juga memiliki keterampilan komunikasi yang baik dan dapat bekerja secara efektif dalam sebuah tim. Saya percaya bahwa pengembangan web tidak hanya tentang coding, tetapi juga tentang menciptakan pengalaman pengguna yang mengesankan dan bekerja secara harmonis dalam sebuah tim untuk mencapai tujuan bersama.</p>
+            <div class="video">
+                <video src="img/Latihan Membuat Website.mp4" width="300" controls></video>
+            </div>
+        </div>
+
+        <div class="pengalaman">
+            <h2 id="pengalaman2">Pengalaman</h2>
+            <table border="1">
+                <tr>
+                    <th colspan="2">Tahun</th>
+                    <th rowspan="2">Organisai / Kepanitiaan</th>
+                    <th rowspan="2">Posisi</th>
+                    <th rowspan="2">Deskripsi</th>
+                <tr>
+                    <th>Mulai</th>
+                    <th>Selesai</th>
+                </tr>
+                </tr>
+    
+                <tr>
+                    <td>Juni 2022</td>
+                    <td>Agustus 2022</td>
+                    <td>Program Pengenalan Lingkungan Kampus (PPLK) ITERA 2022</td>
+                    <td>Staff Content Research dari Divisi Implementasi Teknologi</td>
+                    <td>Mencari, menganalisis, dan memproses data/informasi yang akan digunakan dalam sebuah situs web atau aplikasi</td>
+                </tr>
+    
+                <tr>
+                    <td>September 2022</td>
+                    <td>Juli 2023</td>
+                    <td>Institut Teknologi Sumatera</td>
+                    <td>Asisten Praktikum</td>
+                    <td>
+                        <ul>
+                            <li>Membantu dosen dalam memandu dan mendukung kegiatan pembelajaran, seperti menjawab pertanyaan, berdiskusi dengan mahasiswa, membantu dan mengatasi hambatan yang muncul selama sesi praktikum.</li>
+                            <li>Melakukan presentasi yang terkait dengan materi praktikum, seperti pengolahan data di Excel dan Word, pembuatan diagram alir, dan praktik pemrograman dalam bahasa C++.</li>
+                            <li>Memproses dan mengevaluasi tugas-tugas mahasiswa yang memerlukan ketelitian dalam pengecekan.</li>
+                        </ul>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>November 2022</td>
+                    <td>Februari 2023</td>
+                    <td>PEMIRA KM ITERA</td>
+                    <td>Staff Voting dari Divisi Implementasi Teknologi</td>
+                    <td>Mendesain tampilan web menggunakan Figma yang berisi aktivitas pemilihan presiden mahasiswa di Institut Teknologi Sumatera</td>
+                </tr>
+    
+                <tr>
+                    <td>April 2023</td>
+                    <td>Sekarang</td>
+                    <td>Himpunan Mahasiswa Informatika ITERA</td>
+                    <td>staff Divisi Pengembangan dan Pelatihan Keprofesian</td>
+                    <td>
+                        <ul>
+                            <li>Mengadakan seminar/webinar tentang teknologi.</li>
+                            <li>Menggelar pameran tugas akhir lulusan Informatika Itera.</li>
+                            <li>Menyediakan platform untuk berdiskusi bersama tentang proyek dan dunia teknologi.</li>
+                            <li>Mengadakan workshop tentang tema-tema teknologi seperti html, css, dan github.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <form class="kontak">
+            <h2 id="hubungi-saya">Kontak</h2>
+            <label for="nama"> Nama : </label> <br>
+            <input type="text" placeholder="Nama Kamu" id="nama" name="text1"> <br>
+
+            <p> Jenis Kelamin : </p>
+            <input type="radio" name="text2" value="1"> Laki-laki <br>
+            <input type="radio" name="text2" value="2"> Perempuan <br> <br>
+
+            <p>Pilih bahasa pemrograman yang kamu kuasai : </p>
+            <input type="checkbox" name="text3" value="a"> HTML <br>
+            <input type="checkbox" name="text3" value="b"> CSS <br>
+            <input type="checkbox" name="text3" value="c"> JavaScript <br><br>
+
+            <label for="class"> Pilih kelas praktikum pemrograman web kamu :  </label><br>
+            <select id="class" name="class">
+                <option value="RA">RA</option>
+                <option value="RB">RB</option>
+                <option value="RC">RC</option>
+            </select><br><br>
+
+            <label for="mesage"> Kirim pesan : </label><br>
+            <textarea rows="4" cols="50" placeholder="Ketik disini..." id="mesage" name="text4"></textarea><br>
+            
+            <button type="submit">Kirim</button>
+        </form>
+
+        <footer class="bawah">
+            <h3>Create by Dila Ayu Prastita</h3>
+        </footer>
+    </div>
+</body>
+
+</html>
