@@ -1,0 +1,48 @@
+<!--Dila Ayu Prastita-->
+<!--121140075-->
+<!-- Praktikum Pemweb RC -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menghitung Bilangan Ganjil dan Genap</title>
+</head>
+
+<body>
+    <h1>Menghitung Banyaknya Bilangan Ganjil dan Genap</h1>
+    <label for="masukkanBilangan">Masukkan bilangan bulat positif : </label> <br>
+    <input type="angka" id="masukkanBilangan">
+    <button onclick="hitung()">Hitung</button>
+    <br>
+    <span id="hasil"></span>
+
+    <script>
+        function hitung() {
+            const inputElement = document.getElementById("masukkanBilangan");
+            const hasilElement = document.getElementById("hasil");
+
+            // Ambil bilangan dari input
+            const bilangan = parseInt(inputElement.value); // mengonversi string inputan menjadi integer (bilangan bulat)
+
+            if (isNaN(bilangan) || bilangan <= 0) { // isNaN(bilangan) untuk memeriksa apakah nilai dari variabel bilangan bukan merupakan sebuah angka
+                hasilElement.innerText = "Masukkan bilangan bulat positif yang valid."; // Mengambil teks yang terlihat di dalam elemen
+                return;
+            }
+
+            let jumlahGanjil = 0;
+            let jumlahGenap = 0;
+
+            for (let i = 1; i <= bilangan; i++) {
+                if (i % 2 === 0) {
+                    jumlahGenap++;
+                } else {
+                    jumlahGanjil++;
+                }
+            }
+
+            hasilElement.innerText = `Jumlah bilangan genap: ${jumlahGenap}
+            Jumlah bilangan ganjil: ${jumlahGanjil}`;
+        }
+    </script>
+</body>
+</html>
