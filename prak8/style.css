@@ -1,0 +1,40 @@
+/* Dila Ayu Prastita
+121140075
+Praktikum Pemrograman Web Minggu 8 */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(179, 215, 237);
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+button {
+    background-color: #1f1565;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: rgb(71, 71, 188);
+}
